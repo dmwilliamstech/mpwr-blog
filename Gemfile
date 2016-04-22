@@ -12,7 +12,9 @@ source 'https://rubygems.org'
 
 # Optional JSON codec (faster performance)
 # gem 'oj'
-
+group :production do
+  gem 'pg'
+end
 # Project requirements
 gem 'rake'
 
@@ -34,10 +36,6 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 # Padrino Stable Gem
 gem 'padrino', '0.13.1'
 gem 'builder'
-
-group :production do
-  gem 'pg'
-end
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
