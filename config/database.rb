@@ -19,12 +19,6 @@ ActiveRecord::Base.configurations[:development] = {
 
 }
 
-ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'postgresql',
-  :database => Padrino.root('db', 'mpwr_blog_production.db')
-
-}
-
 ActiveRecord::Base.configurations[:test] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', 'mpwr_blog_test.db')
