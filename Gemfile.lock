@@ -102,7 +102,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (>= 3.1)
+  activerecord
   bcrypt
   builder
   haml
@@ -115,4 +115,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   1.11.2
+   1.10.5
