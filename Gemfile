@@ -21,7 +21,6 @@ gem 'bcrypt'
 gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3'
 
 # Test requirements
 gem 'rspec', :group => 'test'
@@ -29,8 +28,9 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 
 # Padrino Stable Gem
 gem 'padrino', '0.13.1'
+
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.11'
 end
 
 group :production do
