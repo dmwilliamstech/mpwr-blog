@@ -12,9 +12,8 @@ source 'https://rubygems.org'
 
 # Optional JSON codec (faster performance)
 # gem 'oj'
-group :production do
   gem 'pg'
-end
+
 # Project requirements
 gem 'rake'
 
