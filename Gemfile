@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Padrino supports Ruby version 1.9 and later
-# ruby '2.0.0'
+# ruby '2.2.1'
 
 # Distribute your app as a gem
 # gemspec
@@ -20,6 +20,11 @@ gem 'rake'
 gem 'bcrypt'
 gem 'sass'
 gem 'haml'
+
+group :development do
+  gem 'sqlite3'
+end
+
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 
 # Test requirements
@@ -28,14 +33,12 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 
 # Padrino Stable Gem
 gem 'padrino', '0.13.1'
-
-group :development do
-  gem 'sqlite3', '1.3.11'
-end
+gem 'builder'
 
 group :production do
   gem 'pg'
 end
+
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
 

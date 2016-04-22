@@ -1,7 +1,6 @@
 ##
 # You can use other adapters like:
 #
-postgres = URI.parse(ENV['DATABASE_URL'] || '')
 
 ActiveRecord::Base.configurations[:production] = {
   :adapter  => 'postgresql',
