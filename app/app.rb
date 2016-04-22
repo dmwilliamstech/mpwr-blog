@@ -7,8 +7,9 @@ module MpwrBlog
 
     enable :sessions
     get "/" do
-      "Hello World!"
-    end
+        @posts = Post.order('created_at DESC').all
+        render 'posts/index'
+            end
 
     get :about, :map => '/about_us' do
       render :haml, "%p This is a sample blog created to demonstrate how Padrino works!"
