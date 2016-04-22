@@ -20,7 +20,7 @@ ActiveRecord::Base.configurations[:development] = {
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'postgres',
+  :adapter => 'postgresql',
   :database => Padrino.root('db', 'mpwr_blog_production.db')
 
 }
