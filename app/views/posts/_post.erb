@@ -1,0 +1,9 @@
+<h2 class="title"><%= link_to post.title, url_for(:posts, :show, id: post.id) %></h2>
+<p class="post-info">
+  Posted by <%= post.account.name %>,
+  <span class="date"><%= time_ago_in_words(post.created_at) + " ago" %></span>
+</p>
+
+<div class="body">
+  <%= simple_format(post.body) %>
+</div>
