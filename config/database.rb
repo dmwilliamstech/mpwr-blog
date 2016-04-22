@@ -1,17 +1,17 @@
 ##
 # You can use other adapters like:
 #
-#   ActiveRecord::Base.configurations[:development] = {
-#     :adapter   => 'mysql2',
-#     :encoding  => 'utf8',
-#     :reconnect => true,
-#     :database  => 'your_database',
-#     :pool      => 5,
-#     :username  => 'root',
-#     :password  => '',
-#     :host      => 'localhost',
-#     :socket    => '/tmp/mysql.sock'
-#   }
+postgres = URI.parse(ENV['DATABASE_URL'] || '')
+
+ActiveRecord::Base.configurations[:production] = {
+  :adapter  => 'postgresql',
+  :encoding => 'utf8',
+  :username => "kbhezcsakmzuhi",
+  :password => "H8j6sus6O--_9pHafp5HLq64gC",
+  :host     => "ec2-174-129-37-54.compute-1.amazonaws.com",
+  :database => "d6iuu4c82q4ohl",
+  :port     => 5432
+}
 #
 ActiveRecord::Base.configurations[:development] = {
   :adapter => 'sqlite3',
